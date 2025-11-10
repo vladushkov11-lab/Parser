@@ -42,7 +42,7 @@ def parse():
         # Рассчитываем СПП
         percent_spp = spp(price_no_spp, price_spp)
         percent_spp = round(percent_spp, 2)
-        
+        percent_spp = float(percent_spp)
         result = {
             "price_spp": price_spp,
             "name": name,
