@@ -13,7 +13,8 @@ def create_products(session, name, price_no_spp, price_spp, percent_spp) -> Opti
         product = Product(
             name=name,
             price_no_spp=price_no_spp,
-            price_spp=price_spp,)
+            price_spp=price_spp,
+            percent_spp = percent_spp)
         session.add(product)
         session.commit()
         return product
