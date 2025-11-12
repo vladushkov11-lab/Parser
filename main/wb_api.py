@@ -190,6 +190,6 @@ def get_wb_price(article):
     finally:
         driver.quit()
 def spp(price_no_spp: int, price_spp: int):
-    spp = (1 - (price_no_spp/price_spp)) * 100
+    spp = (1 - (price_spp/price_no_spp)) * 100
     spp = abs(spp)
     return spp
